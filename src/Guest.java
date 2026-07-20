@@ -31,11 +31,14 @@ public class Guest {
 			if(n==0) {
 				System.out.println("会員登録者:今なら、旧作のみ20%OFFのクーポンが適用されます");
 				this.oldGuest=20;
-				product.print(oldGuest,shelf);//別クラスの呼びだし
+				product.print(oldGuest,shelf,n);//別クラスの呼びだし
+				
 				
 			}
 			
 		}
+		
+		
 	}
 
 }

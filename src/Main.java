@@ -8,7 +8,9 @@ public class Main {
 		Dvd_BookShelf shelf =new Dvd_BookShelf();
 		Guest guest =new Guest(shelf);
 		dvd_Products product =new dvd_Products();
-		guest.print(product);
+		guest.print(product);//nは新規か古参の照明
+		
+		
 
 	  
 	}

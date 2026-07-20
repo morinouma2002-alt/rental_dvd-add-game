@@ -6,7 +6,7 @@ public class Dvd_BookShelf {
 	
 	Random rand =new Random();
 	public static String [][] shelf =new String [5][4];
-	public List<String> shelfList =new ArrayList<>();
+	public static List<String> shelfList =new ArrayList<>();
 	
 	String[] titles = {
 			"アナと雪の女王",
