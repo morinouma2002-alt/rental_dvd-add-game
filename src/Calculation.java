@@ -4,11 +4,13 @@ import java.util.Random;
 public  class Calculation {
 	
 	 public static  String [] value ={"新作","普通","旧作"};
-	 
 	 static int [] price = {120,100,80};
+	 
+	 List<Return> returns;
 	
-	public static void print(int n,List<String> shelfList,String[] ans) {
+	public void print(int n, List<Return> returns) {
 		Random rand =new Random();
+		this.returns=returns;
 		int sum=0;
 		
 		System.out.println("\n料金計算に移ります");

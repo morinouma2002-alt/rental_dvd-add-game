@@ -1,17 +1,16 @@
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 	
-	static Dvd_BookShelf shelf =new Dvd_BookShelf();
-	static Guest guest =new Guest(shelf);
-	static dvd_Products product =new dvd_Products();
-	static Manager mana =new Manager();
-	static Junken_Game  junken=new Junken_Game();
-
+//	static Dvd_BookShelf shelf =new Dvd_BookShelf();
+//	static Guest guest =new Guest(shelf);
+	
 	public static void main(String[] args) {
-		Scanner sc =new Scanner(System.in);
+		List <Return> returns =new ArrayList<>();
 		
-		Command com =new Command(shelf,guest,product,mana,junken);
+		RegiMainMenue com =new RegiMainMenue(returns);
+		
 		com.print();
 		
 	}
